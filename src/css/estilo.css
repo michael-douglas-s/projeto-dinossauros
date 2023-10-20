@@ -1,0 +1,184 @@
+body {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+main::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 80vw;
+
+  background: linear-gradient(-233deg, #000000 15%, rgba(0, 0, 0, 0) 65%)
+    no-repeat;
+
+  background: linear-gradient(-233deg, #000 10%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+main .dinossauros {
+  display: none;
+  height: 100vh;
+}
+
+main .dinossauros.selecionado {
+  display: block;
+  position: relative;
+}
+
+main .dinossauros .imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 430px;
+  z-index: 3;
+}
+
+.conteudo .nome-dinossauro {
+  color: rgb(255, 255, 255);
+
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-family: "secular one";
+  font-weight: 400;
+  text-shadow: 0 0 10px rgb(224, 255, 252);
+}
+
+.conteudo .descricao {
+  color: rgb(255, 255, 255);
+  font-family: "rubik";
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.conteudo .logo {
+  background-image: url(../imagens/JUrassic-removebg-preview.png);
+  background-size: cover;
+  height: 210px;
+  width: 300px;
+  position: relative;
+  left: 15%;
+  margin-bottom: 1px;
+}
+
+.botoes {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 180px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.botoes .botao {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.botoes .botao img {
+  border-radius: 50%;
+}
+.botoes .botao.selecionado :hover {
+  transform: scale(1.2);
+}
+
+.botao.selecionado {
+  animation: animar linear 4s infinite;
+}
+
+@keyframes animar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.botao-saiba-mais {
+  border: none;
+  box-shadow: 0 0 10px rgb(224, 255, 252);
+  border-radius: 50px;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 5px 40px 5px 40px;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  z-index: 4;
+}
+
+.conteudo .conteudo-botao {
+  text-align: center;
+  height: 80px;
+  position: relative;
+ }
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.conteudo-botao:hover {
+  transform: scale(1.1);
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 2;
+}
+
+.fog-img-first {
+  background: url("../imagens/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+  position: fixed;
+  background-size: cover;
+}
+
+.fog-img-second {
+  background: url("../imagens/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+  position: fixed;
+  background-size: cover;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}

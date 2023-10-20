@@ -1,0 +1,80 @@
+@media (max-width: 769px) {
+  main::after {
+    background: linear-gradient(0deg, #000 15%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    width: 100vw;
+  }
+
+  main .dinossauros .imagem {
+    height: 85%;
+  }
+
+  .conteudo {
+    justify-content: flex-end;
+    left: 0;
+    bottom: 15%;
+    max-width: 100vw;
+    padding: 30px;
+  }
+
+  .conteudo .nome-dinossauro {
+    font-size: 35px;
+  }
+
+  .conteudo .descricao {
+    max-width: 500px;
+  }
+
+  .botoes {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .botoes .botao img {
+    max-width: 60px;
+  }
+
+  .conteudo-botao {
+    top: 10px;
+    right: 25px;
+  }
+
+  .botao-saiba-mais {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  main .dinossauros .imagem {
+    height: auto;
+  }
+
+  .conteudo .logo {
+    width: 170px;
+    height: 120px;
+  }
+
+  .conteudo {
+    top: -18%;
+    max-height:100%;
+  }
+
+  .conteudo .nome-dinossauro {
+    font-size: 30x;
+  }
+
+  .botoes {
+    padding: 20px;
+    top: -20%;
+  }
+
+  .botoes .botao img {
+    max-width: 45px;
+  }
+
+  .conteudo-botao {
+    top: 10px;
+    right: 25px;
+  }
+}
