@@ -24,8 +24,7 @@ Projeto Dinossauro 🎯 concluido 👌
 
 A aplicação dos conceitos aprendidos no curso Dev Quest me permitiu aplicar links externos, enriquecendo a experiência do usuário ao explorar mais conteúdo relacionado ao site. A ideia do projeto é clara e envolvente.
 
-
-## Curiosidade 
+## Curiosidade
 
 Este projeto tem como objetivo principal interagir com fãs de dinossauros e fornecer informações sobre a sua origem, além de servir como uma forma de aprendizado.
 
